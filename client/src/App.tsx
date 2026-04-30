@@ -11,7 +11,7 @@ import Games from "./pages/Games";
 function Router() {
   return (
     <Switch>
-      <Route path={"/ "} component={Home} />
+      <Route path={"/"} component={Home} />
       <Route path={"/games"} component={Games} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
