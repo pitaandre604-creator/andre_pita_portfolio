@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, CheckCircle, Code2, Smartphone, Cloud, Zap, Users, TrendingUp, MessageCircle } from "lucide-react";
 import { useState } from "react";
+import VirusAttackOverlay from "@/components/VirusAttackOverlay";
 
 /**
  * DESIGN PHILOSOPHY: Cyberpunk Neon Futurista
@@ -20,6 +21,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-hidden">
+      <VirusAttackOverlay />
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b neon-border">
         <div className="container flex items-center justify-between h-16">
