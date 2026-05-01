@@ -149,6 +149,10 @@ export default function Home() {
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
             Além do desenvolvimento de soluções empresariais, tenho uma paixão ardente pelo universo dos jogos. O Game Dev é onde a criatividade e a lógica se encontram para criar experiências imersivas e emocionantes. Minha expertise em diversas linguagens e frameworks me permite mergulhar na criação de mundos virtuais, desenvolver mecânicas de jogo inovadoras e otimizar a performance para garantir a melhor experiência ao jogador.
           </p>
+          <div className="relative h-96 rounded-lg overflow-hidden mb-12 border neon-border">
+            <img src="/gamedev-showcase.png" alt="Game Development Studio" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background" />
+          </div>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
             Seja na criação de protótipos, no desenvolvimento de jogos completos ou na otimização de engines, estou sempre buscando os limites da tecnologia para dar vida a novas aventuras. Acredito que os jogos são uma forma poderosa de arte e entretenimento, e estou pronto para transformar suas ideias de game em realidade. Vamos construir o próximo grande sucesso juntos!
           </p>
@@ -218,7 +222,7 @@ export default function Home() {
           <div 
             className="relative h-96 rounded-lg overflow-hidden mb-12 border neon-border"
             style={{
-              backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663121054031/SBEhzPxQNjZeHSvibyvHtZ/services-tech-stack-baNvi8pjVEr6FkHAvLFDYD.webp')",
+              backgroundImage: "url('/programming-setup.png')",
               backgroundSize: "cover",
               backgroundPosition: "center"
             }}
@@ -361,7 +365,7 @@ export default function Home() {
           <div 
             className="relative h-80 rounded-lg overflow-hidden mb-12 border neon-border"
             style={{
-              backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663121054031/SBEhzPxQNjZeHSvibyvHtZ/testimonials-section-ic2MxLd2xeUUT96yoWRKCdV.webp')",
+              backgroundImage: "url('/tech-concept.png')",
               backgroundSize: "cover",
               backgroundPosition: "center"
             }}
