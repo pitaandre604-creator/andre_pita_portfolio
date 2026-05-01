@@ -21,13 +21,21 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-hidden">
-      <VirusAttackOverlay />
+      <VirusAttackOverlay interval={300000} />
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b neon-border">
         <div className="container flex items-center justify-between h-16">
           <div className="flex items-center gap-2">
             <Code2 className="w-6 h-6 text-neon-cyan" />
             <span className="font-bold text-xl text-neon-cyan">ANDRÉ PITA</span>
+          </div>
+          <div className="flex gap-4">
+            <a href="https://github.com/AndrePita" target="_blank" rel="noopener noreferrer" className="text-neon-cyan hover:text-neon-magenta transition-colors">
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/andre-pita" target="_blank" rel="noopener noreferrer" className="text-neon-cyan hover:text-neon-magenta transition-colors">
+              LinkedIn
+            </a>
           </div>
           <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
             <Button className="bg-neon-green hover:bg-neon-green/80 text-neon-dark font-bold">
@@ -100,6 +108,68 @@ export default function Home() {
         </div>
       </section>
 
+
+
+      {/* About Me Section */}
+      <section className="py-20 bg-card/30 border-t neon-border">
+        <div className="container text-center">
+          <h2 className="text-4xl font-bold mb-4">
+            <span className="text-neon-cyan">Sobre Mim</span> - A Essência por Trás do Código
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
+            Olá! Sou André Pita, um desenvolvedor Full Stack com 31 anos, nascido e criado na paradisíaca Saquarema, a capital mundial do surf no Brasil. Minha jornada no mundo da programação começou como uma paixão, que rapidamente se transformou em uma carreira dedicada a transformar ideias em realidade digital. Com mais de 5 anos de experiência e dezenas de projetos entregues, meu objetivo é construir soluções que não apenas funcionem, mas que inspirem e impulsionem negócios.
+          </p>
+          <div className="relative h-96 rounded-lg overflow-hidden mb-12 border neon-border">
+            <img src="/gamedev-showcase.png" alt="Game Development Studio" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background" />
+          </div>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
+            Mas a vida vai muito além das linhas de código. Sou um homem de família, abençoado com minha esposa Jennifer, meus filhos Pietro e Gabriel, e minhas enteadas Liz e Valentina. Eles são a minha maior inspiração e a força motriz por trás de cada desafio que supero. A beleza natural de Saquarema, com suas praias deslumbrantes e a energia vibrante do oceano, sempre me lembra da importância de buscar a excelência e a harmonia em tudo o que faço.
+          </p>
+          <div className="relative h-96 rounded-lg overflow-hidden mb-12 border neon-border">
+            <img src="/family-warmth.png" alt="Família de André Pita" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background" />
+          </div>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
+            Minha formação inclui cursos magníficos que me proporcionaram uma base sólida e me permitiram explorar as mais diversas tecnologias, desde o desenvolvimento web e mobile até a arquitetura de sistemas complexos. Acredito que a tecnologia tem o poder de mudar vidas, e é com essa crença que me dedico a cada novo projeto, buscando sempre a inovação e a perfeição.
+          </p>
+          <div className="relative h-96 rounded-lg overflow-hidden mb-12 border neon-border">
+            <img src="/saquarema-magnificent.png" alt="Saquarema, Rio de Janeiro" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background" />
+          </div>
+        </div>
+      </section>
+
+      {/* Game Dev Section */}
+      <section className="py-20">
+        <div className="container text-center">
+          <h2 className="text-4xl font-bold mb-4">
+            <span className="text-neon-magenta">Game Dev</span> - Onde a Paixão Encontra a Programação
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
+            Além do desenvolvimento de soluções empresariais, tenho uma paixão ardente pelo universo dos jogos. O Game Dev é onde a criatividade e a lógica se encontram para criar experiências imersivas e emocionantes. Minha expertise em diversas linguagens e frameworks me permite mergulhar na criação de mundos virtuais, desenvolver mecânicas de jogo inovadoras e otimizar a performance para garantir a melhor experiência ao jogador.
+          </p>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
+            Seja na criação de protótipos, no desenvolvimento de jogos completos ou na otimização de engines, estou sempre buscando os limites da tecnologia para dar vida a novas aventuras. Acredito que os jogos são uma forma poderosa de arte e entretenimento, e estou pronto para transformar suas ideias de game em realidade. Vamos construir o próximo grande sucesso juntos!
+          </p>
+        </div>
+      </section>
+
+      {/* Minha Visão e Valores Section */}
+      <section className="py-20 bg-card/30 border-t neon-border">
+        <div className="container text-center">
+          <h2 className="text-4xl font-bold mb-4">
+            <span className="text-neon-green">Minha Visão</span> e Valores
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
+            Em cada projeto, trago não apenas minha expertise técnica, mas também um compromisso inabalável com a qualidade, a transparência e a comunicação. Acredito que o sucesso de um projeto é construído em parceria, com confiança mútua e um entendimento claro dos objetivos. Minha missão é ir além das expectativas, entregando soluções que gerem valor real e duradouro para meus clientes.
+          </p>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            Com uma abordagem focada em resultados e uma paixão genuína por tecnologia, estou pronto para ser o seu parceiro estratégico no mundo digital. Vamos conversar e descobrir como posso ajudar a transformar seu negócio ou sua ideia em algo verdadeiramente magnífico.
+          </p>
+        </div>
+      </section>
+
       {/* Pain Points Section */}
       <section className="py-20 bg-card/50 border-t border-b neon-border">
         <div className="container">
@@ -108,7 +178,7 @@ export default function Home() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
+            [
               {
                 icon: "⚡",
                 title: "Site lento = Clientes perdidos",

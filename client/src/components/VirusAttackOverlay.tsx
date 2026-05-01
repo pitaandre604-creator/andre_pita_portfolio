@@ -1,7 +1,11 @@
 import { useState, useEffect } from 'react';
 import { AlertTriangle, Shield, Zap } from 'lucide-react';
 
-export default function VirusAttackOverlay() {
+interface VirusAttackOverlayProps {
+  interval?: number;
+}
+
+export default function VirusAttackOverlay({ interval: customInterval = 300000 }: VirusAttackOverlayProps) {
   const [isAttacking, setIsAttacking] = useState(false);
   const [message, setMessage] = useState('');
   const [threatLevel, setThreatLevel] = useState(0);
@@ -36,7 +40,7 @@ export default function VirusAttackOverlay() {
       }, 300);
 
       return () => clearInterval(messageInterval);
-    }, 15000);
+    }, customInterval);
 
     return () => clearInterval(interval);
   }, []);
